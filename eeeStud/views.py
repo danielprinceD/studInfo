@@ -70,3 +70,29 @@ def delete4(request,id):
     
 
 # UPDATE
+
+
+def update(request, id):
+    form=Year1Form()
+    try:
+        # Get the student's profile using the provided 'id' parameter.
+        eee_stud = eeeStud.objects.get(id=id)
+    except eeeStud.DoesNotExist:
+        # Handle the case where the student profile does not exist.
+        return redirect('/eee/year1/')  # Redirect to a proper page or show an error message
+
+    if request.method == 'POST':
+        # Create a form instance with data from the POST request and the retrieved student's profile.
+        form = Year1Form(request.POST, instance=eee_stud)
+        
+        # Check if the submitted form data is valid.
+        if form.is_valid():
+            form.save()
+            return redirect('/eee/year1/')  # Redirect after successful update
+        print(form.cleaned_data)
+    else:
+        
+        # Create a form instance with the student's profile data for displaying in the template.
+        form = Year1Form(instance=eee_stud)
+        
+    return render(request, 'eeeStud/update.html', {'form': form, 'profile': eee_stud})
