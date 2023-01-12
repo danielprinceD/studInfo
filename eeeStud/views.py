@@ -195,3 +195,11 @@ def create2(request):
             form.save()
             return redirect('/eee/year2/')    
     return render(request,'eeeStud/create2.html',{'form':form})  
+def create3(request):
+    form=Year3Form()
+    if request.method=='POST':
+        form=Year3Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/eee/year3/')    
+    return render(request,'eeeStud/create3.html',{'form':form})  
