@@ -2,6 +2,8 @@ from unicodedata import name
 from django.shortcuts import render,redirect
 from .models import eeeStud
 from .models import eeeStud2 ,eeeStud3,eeeStud4
+from .forms import Year1Form
+from .forms import Year2Form
 
 # Create your views here.
 
