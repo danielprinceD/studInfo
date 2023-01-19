@@ -1,16 +1,6 @@
-from unicodedata import name
-from django.shortcuts import render,redirect
-from .models import eeeStud
-from .models import eeeStud2 ,eeeStud3,eeeStud4
-from .forms import Year1Form
-from .forms import Year2Form
-from .forms import Year3Form
-from .forms import Year4Form
 
 # Create your views here.
 
-def eee(request):
-    return render(request,'eeeStud/year.html')
 # YEAR 
 def year1(request):
     data=eeeStud.objects.all()
