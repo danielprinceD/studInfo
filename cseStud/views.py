@@ -49,3 +49,10 @@ def profile3(request,id):
     profil=cseStud3.objects.get(id=id)
     pro={'profile':profil}
     return render(request, 'cseStud/profile3.html',context=pro)
+
+def profile4(request,id):
+    profil=cseStud4.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'cseStud/profile4.html',context=pro)
+
+
