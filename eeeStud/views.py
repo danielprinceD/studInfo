@@ -177,4 +177,12 @@ def update4(request, id):
 
 
 # CREATE
-s\
+
+def create1(request):
+    form=Year1Form()
+    if request.method=='POST':
+        form=Year1Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/eee/year1/')    
+    return render(request,'eeeStud/create1.html',{'form':form})  
