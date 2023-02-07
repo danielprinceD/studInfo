@@ -1,6 +1,8 @@
 
 # Create your views here.
 
+def eee(request):
+    return render(request,'eeeStud/year.html')
 # YEAR 
 def year1(request):
     data=eeeStud.objects.all()
