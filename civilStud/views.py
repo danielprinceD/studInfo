@@ -17,7 +17,14 @@ def civil(request):
 
 
 
-
+def create3(request):
+    form=Year3Form()
+    if request.method=='POST':
+        form=Year3Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/civil/year3/')    
+    return render(request,'civilStud/create3.html',{'form':form})  
 def create4(request):
     form=Year4Form()
     if request.method=='POST':
