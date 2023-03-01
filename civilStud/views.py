@@ -17,6 +17,30 @@ def civil(request):
 
 
 
+
+# SEARCH
+
+
+def search(request):
+    if request.method=='GET':
+        search=request.GET.get('search')
+        post=civilStud.objects.all().filter(name=search)
+        post2=civilStud2.objects.all().filter(name=search)
+        post3=civilStud3.objects.all().filter(name=search)
+        post4=civilStud4.objects.all().filter(name=search)
+    return render(request,'civilStud/search.html',{'post':post,'post2':post2,'post3':post3,'post4':post4})
+
+# CREATE
+
+def create1(request):
+    form=Year1Form()
+    if request.method=='POST':
+        form=Year1Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/civil/year1/')    
+    return render(request,'civilStud/create1.html',{'form':form})  
+
 def create2(request):
     form=Year2Form()
     if request.method=='POST':
