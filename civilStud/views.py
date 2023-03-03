@@ -14,6 +14,28 @@ def civil(request):
 # PROFILE
 
 
+def update3(request, id):
+    form=Year3Form()
+    try:
+        # Get the student's profile using the provided 'id' parameter.
+        civil_stud = civilStud3.objects.get(id=id)
+    except civilStud.DoesNotExist:
+        # Handle the case where the student profile does not exist.
+        return redirect('/civil/year3/')  # Redirect to a proper page or show an error message
+
+    if request.method == 'POST':
+        # Create a form instance with data from the POST request and the retrieved student's profile.
+        form = Year3Form(request.POST, instance=civil_stud)
+        
+        # Check if the submitted form data is valid.
+        if form.is_valid():
+            form.save()
+            return redirect('/civil/year3/')  # Redirect after successful update
+        print(form.cleaned_data)
+    else:
+        
+        # Create a form instance with the student's profile data for displaying in the template.
+        form = Year3Form(instance=civil_stud)
         
     return render(request, 'civilStud/update.html', {'form': form, 'profile': civil_stud})
 def update4(request, id):
