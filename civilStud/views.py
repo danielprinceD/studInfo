@@ -13,6 +13,14 @@ def civil(request):
 
 # PROFILE
 
+
+# DELETE
+
+def delete(request,id):
+    delet=civilStud.objects.get(id=id)
+    delet.delete()
+    return redirect('/civil/year1/')
+
 def delete2(request,id):
     delet=civilStud2.objects.get(id=id)
     delet.delete()
