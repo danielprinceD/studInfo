@@ -13,6 +13,11 @@ def civil(request):
 
 # PROFILE
 
+def profile4(request,id):
+    profil=civilStud4.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'civilStud/profile4.html',context=pro)
+
 
 # DELETE
 
