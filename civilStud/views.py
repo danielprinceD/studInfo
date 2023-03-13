@@ -13,6 +13,12 @@ def civil(request):
 
 # PROFILE
 
+
+def profile(request,id):
+    profil=civilStud.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'civilStud/profile.html',context=pro)
+
 def profile2(request,id):
     profil=civilStud2.objects.get(id=id)
     pro={'profile':profil}
