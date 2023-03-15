@@ -7,6 +7,9 @@ def civil(request):
     return render(request,'civilStud/year.html')
 # YEAR 
 
+def year2(request):
+    data=civilStud2.objects.all()
+    sdata={'data':data}
     return render(request,'civilStud/2year.html',context=sdata)
 
 def year3(request):
