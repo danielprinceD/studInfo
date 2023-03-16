@@ -6,6 +6,10 @@ from .models import civilStud
 def civil(request):
     return render(request,'civilStud/year.html')
 # YEAR 
+def year1(request):
+    data=civilStud.objects.all()
+    sdata={'data':data}
+    return render(request,'civilStud/1year.html',context=sdata)
 
 def year2(request):
     data=civilStud2.objects.all()
