@@ -1,6 +1,8 @@
 from unicodedata import name
 from django.shortcuts import render,redirect
 from .models import civilStud
+from .models import civilStud2 ,civilStud3,civilStud4
+from .forms import Year1Form
 # Create your views here.
 
 def civil(request):
