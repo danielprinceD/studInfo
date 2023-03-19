@@ -24,6 +24,10 @@ def year3(request):
     sdata={'data':data}
     return render(request,'civilStud/3year.html',context=sdata)
 
+def year4(request):
+    data=civilStud4.objects.all()
+    sdata={'data':data}
+    return render(request,'civilStud/4year.html',context=sdata)
 
 # PROFILE
 
