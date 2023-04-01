@@ -6,3 +6,4 @@ class civilAdmin(admin.ModelAdmin):
     l='__all__'
     
     
+admin.site.register(civilStud,civilAdmin)
