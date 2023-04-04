@@ -9,3 +9,4 @@ class civilAdmin(admin.ModelAdmin):
 admin.site.register(civilStud,civilAdmin)
 admin.site.register(civilStud2,civilAdmin)
 admin.site.register(civilStud3,civilAdmin)
+admin.site.register(civilStud4,civilAdmin)
