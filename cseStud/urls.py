@@ -19,5 +19,8 @@ from cseStud import views
 from depInfo import views as depInfoViews
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.cse),
+    path('year1/',views.year1),
 
 ]
