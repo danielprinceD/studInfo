@@ -30,4 +30,6 @@ urlpatterns = [
     path('year1/create1/',views.create1),
     path('year1/search/',depInfoViews.search ,name='searchbar'),
 
+    path('year2/',views.year2),
+    path('year2/profile2/<id>/',views.profile2),
 ]
