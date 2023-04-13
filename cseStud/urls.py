@@ -44,4 +44,7 @@ urlpatterns = [
 
     path('year4/',views.year4),
     path('year4/profile4/<id>/',views.profile4),
+    path('year4/update4/<int:id>/',views.update4),
+    path('year4/delete4/<id>/',views.delete4),
+    path('year4/create4/',views.create4),
 ]
