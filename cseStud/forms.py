@@ -8,3 +8,9 @@ class Year1Form(forms.ModelForm):
     class Meta:
         model=cseStud
         fields='__all__'
+
+class Year2Form(forms.ModelForm):
+    
+    class Meta:
+        model=cseStud2
+        fields='__all__'
