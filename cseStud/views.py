@@ -9,6 +9,9 @@ from .forms import Year4Form
 
 # Create your views here.
 
+def cse(request):
+    return render(request,'cseStud/year.html')
+# YEAR 
 def year1(request):
     data=cseStud.objects.all()
     sdata={'data':data}
