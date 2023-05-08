@@ -23,5 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.depInfo),
     path('cse/',include('cseStud.urls')),
- 
+    path('ece/',include('eceStud.urls')),
+    path('eee/',include('eeeStud.urls')),
+\
 ]
