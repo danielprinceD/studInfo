@@ -25,5 +25,8 @@ urlpatterns = [
     path('cse/',include('cseStud.urls')),
     path('ece/',include('eceStud.urls')),
     path('eee/',include('eeeStud.urls')),
-\
+    path('civil/',include('civilStud.urls')),
+    path('mech/',include('mechStud.urls')),
+  
+
 ]
