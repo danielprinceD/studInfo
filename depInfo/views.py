@@ -6,6 +6,7 @@ from cseStud.models import cseStud
 from cseStud.models import cseStud2 ,cseStud3,cseStud4
 
 from civilStud.models import civilStud
+from civilStud.models import civilStud2 ,civilStud3,civilStud4
 # Create your views here.
 def depInfo(request):
  return render(request,'depInfo/depInfo.html')
