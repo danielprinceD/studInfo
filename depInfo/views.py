@@ -11,6 +11,8 @@ from civilStud.models import civilStud2 ,civilStud3,civilStud4
 from eeeStud.models import eeeStud
 from eeeStud.models import eeeStud2 ,eeeStud3,eeeStud4
 
+from mechStud.models import mechStud
+from mechStud.models import mechStud2 ,mechStud3,mechStud4
 # Create your views here.
 def depInfo(request):
  return render(request,'depInfo/depInfo.html')
