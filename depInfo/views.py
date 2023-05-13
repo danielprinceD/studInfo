@@ -19,3 +19,8 @@ def depInfo(request):
 
 
 
+def search(request):
+    if request.method=='GET':
+        search=request.GET.get('search')
+        ece=eceStud.objects.all().filter(name=search)
+   
