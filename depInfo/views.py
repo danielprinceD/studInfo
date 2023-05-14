@@ -23,4 +23,7 @@ def search(request):
     if request.method=='GET':
         search=request.GET.get('search')
         ece=eceStud.objects.all().filter(name=search)
-   
+        ece2=eceStud2.objects.all().filter(name=search)
+        ece3=eceStud3.objects.all().filter(name=search)
+        ece4=eceStud4.objects.all().filter(name=search)
+  \
