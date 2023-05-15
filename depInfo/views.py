@@ -26,4 +26,7 @@ def search(request):
         ece2=eceStud2.objects.all().filter(name=search)
         ece3=eceStud3.objects.all().filter(name=search)
         ece4=eceStud4.objects.all().filter(name=search)
-  \
+        cse=cseStud.objects.all().filter(name=search)
+        cse2=cseStud2.objects.all().filter(name=search)
+        cse3=cseStud3.objects.all().filter(name=search)
+ \
