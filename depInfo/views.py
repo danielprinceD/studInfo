@@ -29,4 +29,7 @@ def search(request):
         cse=cseStud.objects.all().filter(name=search)
         cse2=cseStud2.objects.all().filter(name=search)
         cse3=cseStud3.objects.all().filter(name=search)
- \
+        cse4=cseStud4.objects.all().filter(name=search)
+        civil=civilStud.objects.all().filter(name=search)
+        civil2=civilStud2.objects.all().filter(name=search)
+ 
