@@ -35,7 +35,4 @@ def search(request):
         civil3=civilStud3.objects.all().filter(name=search)
         civil4=civilStud4.objects.all().filter(name=search)
         eee=eeeStud.objects.all().filter(name=search)
-        eee2=eeeStud2.objects.all().filter(name=search)
-        eee3=eeeStud3.objects.all().filter(name=search)
-        eee4=eeeStud4.objects.all().filter(name=search)
-
+\
