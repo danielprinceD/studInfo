@@ -38,4 +38,8 @@ def search(request):
         eee2=eeeStud2.objects.all().filter(name=search)
         eee3=eeeStud3.objects.all().filter(name=search)
         eee4=eeeStud4.objects.all().filter(name=search)
+        mech=mechStud.objects.all().filter(name=search)
+        mech2=mechStud2.objects.all().filter(name=search)
+        mech3=mechStud3.objects.all().filter(name=search)
+        mech4=mechStud4.objects.all().filter(name=search)
 
