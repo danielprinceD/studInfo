@@ -42,4 +42,5 @@ def search(request):
         mech2=mechStud2.objects.all().filter(name=search)
         mech3=mechStud3.objects.all().filter(name=search)
         mech4=mechStud4.objects.all().filter(name=search)
+    return render(request,'cseStud/search.html',{'ece':ece,'ece2':ece2,'ece3':ece3,'ece4':ece4,'cse':cse,'cse2':cse2,'cse3':cse3,'cse4':cse4,'civil':civil,'civil2':civil2,'civil3':civil3,'civil4':civil4,'eee':eee,'eee2':eee2,'eee3':eee3,'eee4':eee4,'mech':mech,'mech2':mech2,'mech3':mech3,'mech4':mech4})
 
