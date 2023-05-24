@@ -8,3 +8,6 @@ from .forms import Year3Form
 from .forms import Year4Form
 
 # Create your views here.
+
+def cse(request):
+    return render(request,'cseStud/year.html')
