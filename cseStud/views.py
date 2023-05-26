@@ -16,3 +16,8 @@ def year1(request):
     data=cseStud.objects.all()
     sdata={'data':data}
     return render(request,'cseStud/1year.html',context=sdata)
+
+def year2(request):
+    data=cseStud2.objects.all()
+    sdata={'data':data}
+    return render(request,'cseStud/2year.html',context=sdata)
