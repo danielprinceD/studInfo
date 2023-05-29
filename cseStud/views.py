@@ -31,3 +31,11 @@ def year4(request):
     data=cseStud4.objects.all()
     sdata={'data':data}
     return render(request,'cseStud/4year.html',context=sdata)
+
+# PROFILE
+
+
+def profile(request,id):
+    profil=cseStud.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'cseStud/profile.html',context=pro)
