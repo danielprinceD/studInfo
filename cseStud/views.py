@@ -56,3 +56,10 @@ def profile4(request,id):
     return render(request, 'cseStud/profile4.html',context=pro)
 
 
+# DELETE
+
+def delete(request,id):
+    delet=cseStud.objects.get(id=id)
+    delet.delete()
+    return redirect('/cse/year1/')
+
