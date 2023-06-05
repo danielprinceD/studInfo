@@ -72,3 +72,10 @@ def delete3(request,id):
     delet=cseStud3.objects.get(id=id)
     delet.delete()
     return redirect('/cse/year3/')
+
+def delete4(request,id):
+    delet=cseStud4.objects.get(id=id)
+    delet.delete()
+    return redirect('/cse/year4/')
+    
+
