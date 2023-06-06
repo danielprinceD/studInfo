@@ -79,3 +79,30 @@ def delete4(request,id):
     return redirect('/cse/year4/')
     
 
+# UPDATE
+
+
+def update(request, id):
+    form=Year1Form()
+    try:
+        # Get the student's profile using the provided 'id' parameter.
+        cse_stud = cseStud.objects.get(id=id)
+    except cseStud.DoesNotExist:
+        # Handle the case where the student profile does not exist.
+        return redirect('/cse/year1/')  # Redirect to a proper page or show an error message
+
+    if request.method == 'POST':
+        # Create a form instance with data from the POST request and the retrieved student's profile.
+        form = Year1Form(request.POST, instance=cse_stud)
+        
+        # Check if the submitted form data is valid.
+        if form.is_valid():
+            form.save()
+            return redirect('/cse/year1/')  # Redirect after successful update
+        print(form.cleaned_data)
+    else:
+        
+        # Create a form instance with the student's profile data for displaying in the template.
+        form = Year1Form(instance=cse_stud)
+        
+    return render(request, 'cseStud/update.html', {'form': form, 'profile': cse_stud})
