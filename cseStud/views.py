@@ -106,3 +106,29 @@ def update(request, id):
         form = Year1Form(instance=cse_stud)
         
     return render(request, 'cseStud/update.html', {'form': form, 'profile': cse_stud})
+def update2(request, id):
+    form=Year2Form()
+    try:
+        # Get the student's profile using the provided 'id' parameter.
+        cse_stud = cseStud2.objects.get(id=id)
+    except cseStud.DoesNotExist:
+        # Handle the case where the student profile does not exist.
+        return redirect('/cse/year2/')  # Redirect to a proper page or show an error message
+
+    if request.method == 'POST':
+        # Create a form instance with data from the POST request and the retrieved student's profile.
+        form = Year2Form(request.POST, instance=cse_stud)
+        
+        # Check if the submitted form data is valid.
+        if form.is_valid():
+            form.save()
+            return redirect('/cse/year2/')  # Redirect after successful update
+        print(form.cleaned_data)
+    else:
+        
+        # Create a form instance with the student's profile data for displaying in the template.
+        form = Year2Form(instance=cse_stud)
+        
+    return render(request, 'cseStud/update.html', {'form': form, 'profile': cse_stud})
+
+
