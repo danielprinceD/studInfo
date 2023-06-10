@@ -186,3 +186,12 @@ def update4(request, id):
 # SEARCH
 
 
+def search(request):
+    if request.method=='GET':
+        search=request.GET.get('search')
+        post=cseStud.objects.all().filter(name=search)
+        post2=cseStud2.objects.all().filter(name=search)
+        post3=cseStud3.objects.all().filter(name=search)
+        post4=cseStud4.objects.all().filter(name=search)
+    return render(request,'cseStud/search.html',{'post':post,'post2':post2,'post3':post3,'post4':post4})
+
