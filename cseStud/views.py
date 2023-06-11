@@ -195,3 +195,13 @@ def search(request):
         post4=cseStud4.objects.all().filter(name=search)
     return render(request,'cseStud/search.html',{'post':post,'post2':post2,'post3':post3,'post4':post4})
 
+# CREATE
+
+def create1(request):
+    form=Year1Form()
+    if request.method=='POST':
+        form=Year1Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/cse/year1/')    
+    return render(request,'cseStud/create1.html',{'form':form})  
