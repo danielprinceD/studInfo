@@ -205,3 +205,12 @@ def create1(request):
             form.save()
             return redirect('/cse/year1/')    
     return render(request,'cseStud/create1.html',{'form':form})  
+
+def create2(request):
+    form=Year2Form()
+    if request.method=='POST':
+        form=Year2Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/cse/year2/')    
+    return render(request,'cseStud/create2.html',{'form':form})  
