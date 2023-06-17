@@ -9,3 +9,5 @@ from .forms import Year4Form
 
 # Create your views here.
 
+def ece(request):
+    return render(request,'eceStud/year.html')
