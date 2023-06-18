@@ -11,3 +11,9 @@ from .forms import Year4Form
 
 def ece(request):
     return render(request,'eceStud/year.html')
+# YEAR 
+def year1(request):
+    data=eceStud.objects.all()
+    sdata={'data':data}
+    return render(request,'eceStud/1year.html',context=sdata)
+
