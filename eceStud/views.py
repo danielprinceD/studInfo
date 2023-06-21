@@ -26,3 +26,9 @@ def year3(request):
     data=eceStud3.objects.all()
     sdata={'data':data}
     return render(request,'eceStud/3year.html',context=sdata)
+
+def year4(request):
+    data=eceStud4.objects.all()
+    sdata={'data':data}
+    return render(request,'eceStud/4year.html',context=sdata)
+
