@@ -32,3 +32,11 @@ def year4(request):
     sdata={'data':data}
     return render(request,'eceStud/4year.html',context=sdata)
 
+# PROFILE
+
+
+def profile(request,id):
+    profil=eceStud.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'eceStud/profile.html',context=pro)
+
