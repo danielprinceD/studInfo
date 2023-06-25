@@ -49,3 +49,8 @@ def profile3(request,id):
     profil=eceStud3.objects.get(id=id)
     pro={'profile':profil}
     return render(request, 'eceStud/profile3.html',context=pro)
+
+def profile4(request,id):
+    profil=eceStud4.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'eceStud/profile4.html',context=pro)
