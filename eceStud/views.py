@@ -62,3 +62,9 @@ def delete(request,id):
     delet=eceStud.objects.get(id=id)
     delet.delete()
     return redirect('/ece/year1/')
+
+def delete2(request,id):
+    delet=eceStud2.objects.get(id=id)
+    delet.delete()
+    return redirect('/ece/year2/')
+
