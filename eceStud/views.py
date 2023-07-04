@@ -185,3 +185,14 @@ def update4(request, id):
 
 # SEARCH
 
+
+# CREATE
+
+def create1(request):
+    form=Year1Form()
+    if request.method=='POST':
+        form=Year1Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/ece/year1/')    
+    return render(request,'eceStud/create1.html',{'form':form})  
