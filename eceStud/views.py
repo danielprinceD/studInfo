@@ -205,3 +205,11 @@ def create2(request):
             form.save()
             return redirect('/ece/year2/')    
     return render(request,'eceStud/create2.html',{'form':form})  
+def create3(request):
+    form=Year3Form()
+    if request.method=='POST':
+        form=Year3Form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/ece/year3/')    
+    return render(request,'eceStud/create3.html',{'form':form})  
