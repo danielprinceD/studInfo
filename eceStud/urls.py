@@ -16,6 +16,8 @@ Including another URLconf
 
 urlpatterns = [
       
+    path('year3/update3/<int:id>/',views.update3),
+    path('year3/delete3/<id>/',views.delete3),
     path('year3/create3/',views.create3),
 
     path('year4/',views.year4),
