@@ -1,11 +1,29 @@
 <html>
-<head>Department Info</head>
+
+<head></head>
 <title>
-Select Departments
+Department Info
 </title>
-{% block content%}
-<a href='dep/cseStud'><button>CSE</button></a> 
-{%endblock%}
 <body>
+
+{% block content1 %}
+
+<div >
+{%load static%}
+<a href="#" target="_blank"><img   class="logo" src="{%static '/depInfo/psr.png'%}" alt="PSR Logo"></a>
+<link rel="stylesheet" href="{%static '/depInfo/logo.css'%}">
+<div>
+
+<div class="foot">
+<table border="1" align="center">
+<tr>
+<td>About Us</td>
+<td>Contact Us</td>
+<td>Our Services</td>
+</tr>
+</table>
+</div>
+
+{%endblock%}
 </body>
 </html>

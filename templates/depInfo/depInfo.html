@@ -1,0 +1,35 @@
+
+{% extends "depInfo/base.html" %}
+<html>
+<body>
+{% block content1  %}
+{{block.super}}
+{%load static%}
+
+<link rel="stylesheet" href="{%static '/depInfo/button.css'%}">
+<div class="branch">
+<h1 align="center">Departments</h1>
+
+<table align="center">
+<tr>
+
+    <td><button><a href="#" >CSE</a></button></td> 
+    <td><button><a href="#" >ECE</a></button></td> 
+</tr>
+<tr>
+    <td><button><a href="#" >EEE</a></button></td>
+    <td><button><a hreh="#" >Civil</a></button></td>
+</tr>
+<tr>
+    <td><button><a hreh="#" >Mech</a></button></td>
+    <td><button><a hreh="#" >Bio-Med</a></button></td>
+</tr>
+</table>
+
+<div>
+
+
+
+{% endblock  %}
+</body>
+</html>

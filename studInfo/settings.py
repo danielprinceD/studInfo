@@ -18,7 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 baseDir=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 tempDir=os.path.join(baseDir,'templates')
-staticDir=os.path.join(baseDir,'static')
+staticDir=os.path.join(baseDir,'/static/')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -122,9 +122,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
+STATIC_URL='static/'
+STATICFILES_DIR=[staticDir]
 
-STATIC_URL = '/static/'
-STATICFILES_DIR=['staticDir']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
