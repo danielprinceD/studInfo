@@ -3,4 +3,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def cse(request):
-    return render(request,'cseStud/base.html')
+    return render(request,'cseStud/year.html')

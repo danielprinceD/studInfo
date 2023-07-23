@@ -19,5 +19,5 @@ from cseStud import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cseStud/',views.cse)
+    path('',views.cse)
 ]

@@ -1,0 +1,41 @@
+.logo 
+{
+    align-items: center;
+    position: sticky;
+    top:0;
+    margin:0px 0px 0px 220px;
+    width: 65%;
+    height: 20%;
+
+}
+.logo:hover
+{
+    background-color:rgb(211, 199, 132);
+    border-radius: 30px;
+}
+.foot
+{
+    text-transform: capitalize;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+}
+.foot > table
+{
+    
+    border-collapse: collapse;
+    background-color: rgb(24, 24, 141);
+    width: 100%;
+}
+.foot td{
+    text-align: center;
+    padding:20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.foot td:hover 
+{
+    background-color: rgb(42, 42, 158);
+
+}
