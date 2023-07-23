@@ -5,7 +5,7 @@ from django.db import models
 class cseStud(models.Model):
     registerNo=models.CharField(max_length=11)
     name=models.CharField(max_length=20)
-    rollno=models.CharField(max_length=6)
+    rollno=models.CharField(max_length=7)
     Year=models.IntegerField()
     Class=models.CharField(max_length=10)
     DOB=models.DateField()
