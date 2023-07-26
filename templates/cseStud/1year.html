@@ -1,0 +1,44 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>1st Year</title>
+</head>
+<body>
+{% block content1 %}
+{{block.super}}
+<div class="table">
+
+<table border="2" align="center">
+    <tr>
+        <th>Reg No </th>
+        <th>Name</th>
+        <th>DOB</th>
+    </tr>
+    {% if sdata %}
+    {% for list in sdata%}
+    <tr>
+        <td>{{list.registerNo}}</td>
+        <td>{{list.name}}</td>
+        <td>{{list.DOB}}</td>
+    {% endfor %}
+    {% endif %}
+    </tr>
+
+</div>
+
+</table>
+
+
+{% endblock %}
+</body>
+</html>
+
+<style>
+
+.table table
+{
+border-collapse:collapse;
+padding:20px 40px
+}
+
+</style>
