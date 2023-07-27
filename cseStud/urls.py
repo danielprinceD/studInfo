@@ -20,5 +20,6 @@ from cseStud import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.cse),
-    path('year1/',views.year1)
+    path('year1/',views.year1),
+    path('year1/profile/<id>',views.profile)
 ]

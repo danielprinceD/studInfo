@@ -1,0 +1,16 @@
+legend {
+    font-weight: bold;
+    color: red;
+    padding: 20px;
+    font-size: 25px;
+}
+
+table {
+    border: 1px solid black;
+    width: 40%
+}
+
+td {
+    font-weight: bold;
+    padding: 7px;
+}

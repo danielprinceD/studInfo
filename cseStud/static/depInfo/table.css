@@ -1,0 +1,27 @@
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+tr {
+    background-color: rgb(219, 234, 248);
+}
+
+tr:hover {
+    background-color: rgb(145, 197, 243);
+    transition: 0.4s
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+
+button:hover {
+    background-color: rgb(54, 245, 182);
+}

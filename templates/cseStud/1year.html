@@ -6,39 +6,41 @@
 <body>
 {% block content1 %}
 {{block.super}}
+<hr>
 <div class="table">
-
-<table border="2" align="center">
+{% load static %}
+    <link rel="stylesheet" href="{% static '/depInfo/table.css'%}">
+    {% if data %}
+    {% for list in data%}
+<table border="1" align="center">
     <tr>
         <th>Reg No </th>
         <th>Name</th>
         <th>DOB</th>
+        <th colspan="2"><th>
+    
     </tr>
-    {% if sdata %}
-    {% for list in sdata%}
+    
     <tr>
         <td>{{list.registerNo}}</td>
         <td>{{list.name}}</td>
         <td>{{list.DOB}}</td>
+        <td><a href='#'><button>Update</button></a></td>
+        <td><a href='#'><button>Delete</button></a></td>
+        <td><a  href='profile/{{list.id}}'><button>View</button></a></td>
+
+    </tr>
     {% endfor %}
     {% endif %}
-    </tr>
 
-</div>
+
 
 </table>
+</div>
 
 
 {% endblock %}
 </body>
 </html>
 
-<style>
 
-.table table
-{
-border-collapse:collapse;
-padding:20px 40px
-}
-
-</style>
