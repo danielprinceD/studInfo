@@ -15,6 +15,8 @@ Including another URLconf
 """
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.ece),
     path('year1/',views.year1),
     path('year1/profile/<id>/',views.profile),
     path('year1/update/<int:id>/',views.update),
