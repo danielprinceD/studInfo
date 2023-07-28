@@ -7,7 +7,7 @@
 {% block content1 %}
 {{block.super}}
 <hr>
-<div class="table">
+<div class="table" align="center">
 {% load static %}
     <link rel="stylesheet" href="{% static '/depInfo/table.css'%}">
     {% if data %}
@@ -25,18 +25,22 @@
         <td>{{list.registerNo}}</td>
         <td>{{list.name}}</td>
         <td>{{list.DOB}}</td>
-        <td><a href='#'><button>Update</button></a></td>
-        <td><a href='#'><button>Delete</button></a></td>
+        <td><a href='update/{{list.id}}'><button>Update</button></a></td>
+        <td><a href='delete/{{list.id}}'><button>Delete</button></a></td>
         <td><a  href='profile/{{list.id}}'><button>View</button></a></td>
 
     </tr>
+
     {% endfor %}
     {% endif %}
 
 
 
 </table>
+<a href='create1/'><button>create</button></a>
+
 </div>
+
 
 
 {% endblock %}

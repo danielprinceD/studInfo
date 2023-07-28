@@ -1,0 +1,116 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>{{profile.name}}</title>
+</head>
+{% load static %}
+
+
+<body align="center">
+    {% block content1 %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
+
+
+
+<form method="POST">
+{% csrf_token %}
+    <center>
+    <legend>{{profile.name}} Details</legend>
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td><input type='text' value="{{profile.name}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Register Number : </td>
+            <td><input type='number' value="{{profile.registerNo}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Roll No. : </td>
+            <td><input type='text' value="{{profile.rollno}}" ></td>
+        <tr>
+
+
+        <tr>
+            <td>Year : </td>
+            <td><input type='number' value="{{profile.Year}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Class : </td>
+            <td><input type='text' value="{{profile.Class}}" ></td>
+        <tr>
+        <tr>
+            <td>DoB : </td>
+            <td><input type='text' value="{{profile.DOB}}" placeholder="{{profile.DOB}}" ></td>
+        <tr>
+        <tr>
+            <td>Place : </td>
+            <td><input type='text' value="{{profile.Place}}" ></td>
+        <tr>
+
+        <tr>
+            <td>First Graduate : </td>
+            <td><input type='checkbox' value="{{profile.FirstGraduate}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Year Of Join : </td>
+            <td><input type='number' min="2000" max="2099" value="{{profile.YearOfJoin}}" ></td>
+        <tr>
+
+
+        <tr>
+            <td>Languages : </td>
+            <td><input type='text' value="{{profile.Languages}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Father Name : </td>
+            <td><input type='text' value="{{profile.FatherName}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Father Occupation : </td>
+            <td><input type='text' value="{{profile.FathersOccupation}}" ></td>
+        <tr>
+
+
+
+        <tr>
+            <td>Mother Name : </td>
+            <td><input type='text' value="{{profile.MotherName}}" ></td>
+        <tr>
+
+
+
+        <tr>
+            <td>Mother Occupation : </td>
+            <td><input type='text' value="{{profile.MothersOccupation}}" ></td>
+        <tr>
+
+
+
+
+
+        <tr>
+            <td>Fees : </td>
+            <td><input type='number' value="{{profile.Fees}}" ></td>
+        <tr>
+
+        <tr>
+            <td>Fees Pending : </td>
+            <td><input type='checkbox' value="{{profile.Pending}}" ></td>
+        </tr>
+        <tr rowspan="2">
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+        </center>
+        </form>
+
+{% endblock %}
+</body>
+</html>

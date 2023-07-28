@@ -1,0 +1,29 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>{{profile.name}}</title>
+</head>
+{% load static %}
+
+
+<body align="center">
+    {% block content1 %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
+
+
+
+<form method="POST">
+    <center>
+    <legend>Create Student</legend>
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <input type="submit" value="Submit">
+
+        </center>
+        </form>
+
+{% endblock %}
+</body>
+</html>
