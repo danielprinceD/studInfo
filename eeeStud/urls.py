@@ -19,6 +19,7 @@ from eeeStud import views
 from depInfo import views as depInfoViews
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
 
 
 ]
