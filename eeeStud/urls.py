@@ -20,6 +20,8 @@ from depInfo import views as depInfoViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.eee),
+    path('year1/',views.year1),
 
 
 ]
