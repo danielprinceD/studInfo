@@ -1,4 +1,6 @@
 from django.db import models
+from django.conf import settings
+from django import forms
 
 # Create your models here.
 
@@ -19,3 +21,4 @@ class cseStud(models.Model):
     MothersOccupation=models.CharField(max_length=20)
     Fees=models.IntegerField()
     Pending=models.BooleanField()
+

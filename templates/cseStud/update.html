@@ -11,85 +11,87 @@
     {{block.super}}
     <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
 
+    <form method="POST">
+        
 
 
-<form method="POST">
-{% csrf_token %}
     <center>
-    <legend>{{profile.name}} Details</legend>
+    <legend>Student Details</legend>
     <table>
+        
+            
         <tr>
             <td>Name :</td>
-            <td><input type='text' value="{{profile.name}}" ></td>
+            <td><input type='text' value="{{profile.name}}" reqired></td>
         <tr>
 
         <tr>
             <td>Register Number : </td>
-            <td><input type='number' value="{{profile.registerNo}}" ></td>
+            <td><input type='number' value="{{profile.registerNo}}" reqired></td>
         <tr>
 
         <tr>
             <td>Roll No. : </td>
-            <td><input type='text' value="{{profile.rollno}}" ></td>
+            <td><input type='text' value="{{profile.rollno}}" required></td>
         <tr>
 
 
         <tr>
             <td>Year : </td>
-            <td><input type='number' value="{{profile.Year}}" ></td>
+            <td><input type='number' value="{{profile.Year}}" required ></td>
         <tr>
 
         <tr>
             <td>Class : </td>
-            <td><input type='text' value="{{profile.Class}}" ></td>
+            <td><input type='text' value="{{profile.Class}}" required></td>
         <tr>
         <tr>
             <td>DoB : </td>
-            <td><input type='text' value="{{profile.DOB}}" placeholder="{{profile.DOB}}" ></td>
+            <td><input type='text' value="{{profile.DOB}}" required placeholder="YYYY-MM-DD" ></td>
         <tr>
         <tr>
             <td>Place : </td>
-            <td><input type='text' value="{{profile.Place}}" ></td>
+            <td><input type='text' value="{{profile.Place}} "required ></td>
         <tr>
 
         <tr>
             <td>First Graduate : </td>
-            <td><input type='checkbox' value="{{profile.FirstGraduate}}" ></td>
+            <td><input type='text' value="{{profile.FirstGraduate}}" ></td>
         <tr>
 
         <tr>
             <td>Year Of Join : </td>
-            <td><input type='number' min="2000" max="2099" value="{{profile.YearOfJoin}}" ></td>
+            <td><input type='number' value="{{profile.YearOfJoin}}" required></td>
         <tr>
 
 
         <tr>
             <td>Languages : </td>
-            <td><input type='text' value="{{profile.Languages}}" ></td>
+            <td><input type='text' value="{{profile.Languages}}" required></td>
         <tr>
 
         <tr>
             <td>Father Name : </td>
-            <td><input type='text' value="{{profile.FatherName}}" ></td>
+            <td><input type='text' value="{{profile.FatherName}}" required></td>
         <tr>
 
         <tr>
             <td>Father Occupation : </td>
-            <td><input type='text' value="{{profile.FathersOccupation}}" ></td>
+            <td><input type='text' value="{{profile.FathersOccupation}}" required></td>
         <tr>
 
 
 
         <tr>
             <td>Mother Name : </td>
-            <td><input type='text' value="{{profile.MotherName}}" ></td>
+            <td><input type='text' value="{{profile.MotherName}}" required></td>
         <tr>
 
 
 
         <tr>
             <td>Mother Occupation : </td>
-            <td><input type='text' value="{{profile.MothersOccupation}}" ></td>
+            <td><input type='text' value="{{profile.MothersOccupation}}" required></td>
         <tr>
 
 
@@ -98,19 +100,24 @@
 
         <tr>
             <td>Fees : </td>
-            <td><input type='number' value="{{profile.Fees}}" ></td>
+            <td><input type='number' value="{{profile.Fees}}" required></td>
         <tr>
 
         <tr>
             <td>Fees Pending : </td>
-            <td><input type='checkbox' value="{{profile.Pending}}" ></td>
+            <td><input type='text' value="{{profile.Pending}}" ></td>
         </tr>
-        <tr rowspan="2">
-            <td><input type="submit" value="Submit"></td>
+        <tr rowspan="2" align="right">
+            <td><input type="submit" value="Update"></td>
         </tr>
-        </center>
-        </form>
+        
 
+        
+        {% csrf_token %}
+    
+</table></center>
+{% csrf_token %}
+</form>
 {% endblock %}
 </body>
 </html>

@@ -14,3 +14,9 @@ td {
     font-weight: bold;
     padding: 7px;
 }
+
+.create_form {
+    margin: 0px 0px 100px 0px;
+    background-color: bisque;
+    text-align: center;
+}
