@@ -26,6 +26,8 @@ urlpatterns = [
     path('year1/update/<int:id>/',views.update),
     path('year1/delete/<id>/',views.delete),
       
+    path('year1/create1/',views.create1),
+    path('year1/create1/',views.create1),
 
 
 ]
