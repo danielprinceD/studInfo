@@ -22,10 +22,10 @@ from cseStud import urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.depInfo),
-    path('dep/cse/',include('cseStud.urls')),
-    path('dep/ece/',include('eceStud.urls')),
-    path('dep/eee/',include('eeeStud.urls')),
-    path('dep/civil/',include('civilStud.urls')),
-    path('dep/mech/',include('mechStud.urls')),
+    path('cse/',include('cseStud.urls')),
+    path('ece/',include('eceStud.urls')),
+    path('eee/',include('eeeStud.urls')),
+    path('civil/',include('civilStud.urls')),
+    path('mech/',include('mechStud.urls')),
 
 ]
