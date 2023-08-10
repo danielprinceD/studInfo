@@ -21,7 +21,7 @@ django-six==1.0.5
 excel-base==1.0.4
 
 filelock==3.6.0
-grpcio==1.30.2
+
 httplib2==0.20.2
 idna==3.3
 ifaddr==0.1.7
