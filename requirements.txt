@@ -3,7 +3,7 @@ Django==4.1.4
 psycopg2-binary==2.9.5
 sqlparse==0.4.3
 tzdata==2022.7
-six==1.14.8
+six==1.14.0
 attrs==19.3.0
 setuptools==40.8.0
 Jinja2==2.11.3
