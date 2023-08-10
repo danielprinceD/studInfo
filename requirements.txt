@@ -19,22 +19,16 @@ beautifulsoup4==4.10.0
 blinker==1.4
 
 
-certifi==2020.6.20
-chardet==4.0.0
+
 
 colorama==0.4.4
-command-not-found==0.3
+
 compizconfig-python==0.9.14.1
 configobj==5.0.6
-cryptography==3.4.8
-cupshelpers==1.0
+
+
 dbus-python==1.2.18
 
 distro==1.7.0
 Django==4.1.4
 django-admin==2.0.2
-django-excel-response2==3.0.6
-django-six==1.0.5
-excel-base==1.0.4
-
-filelock==3.6.0
