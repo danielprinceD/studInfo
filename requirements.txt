@@ -10,7 +10,7 @@ Jinja2==2.11.3
 urllib3==1.26.4
 whitenoise==6.2.0
 
-asgiref==1.2.1
+
 httplib2==0.20.2
 html5lib==0.95
 beautifulsoup4==4.10.0
