@@ -20,7 +20,7 @@ def profile(request,id):
 def delete(request,id):
     delet=cseStud.objects.get(id=id)
     delet.delete()
-    return redirect('/depInfo/dep/cse/year1/')
+    return redirect('/cse/year1/')
     
 
 def update(request,id):
@@ -40,5 +40,5 @@ def create1(request):
         form=Year1Form(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('/depInfo/dep/cse/year1/')    
+            return redirect('/cse/year1/')    
     return render(request,'cseStud/create1.html',{'form':form})  

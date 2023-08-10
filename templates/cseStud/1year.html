@@ -3,13 +3,14 @@
 <head>
 <title>1st Year</title>
 </head>
+{% load static %}
+    <link rel="stylesheet" href="{%static '/depInfo/table.css'%}">
 <body>
 {% block content1 %}
 {{block.super}}
 <hr>
 <div class="table" align="center">
-{% load static %}
-    <link rel="stylesheet" href="{% static '/depInfo/table.css'%}">
+
 
 <table border="1" align="center">
     <tr>
