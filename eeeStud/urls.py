@@ -40,5 +40,6 @@ urlpatterns = [
     path('year3/profile3/<id>/',views.profile3),
     path('year3/update3/<int:id>/',views.update3),
     path('year3/delete3/<id>/',views.delete3),
+    path('year3/create3/',views.create3),
 
 ]
