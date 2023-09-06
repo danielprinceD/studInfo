@@ -72,3 +72,11 @@ def delete4(request,id):
 # UPDATE
 
 
+def update(request, id):
+    form=Year1Form()
+    try:
+        # Get the student's profile using the provided 'id' parameter.
+        eee_stud = eeeStud.objects.get(id=id)
+    except eeeStud.DoesNotExist:
+        # Handle the case where the student profile does not exist.
+        return redirect('/eee/year1/')  # Redirect to a proper page or show an error message
