@@ -16,3 +16,10 @@ def year3(request):
     data=eeeStud3.objects.all()
     sdata={'data':data}
     return render(request,'eeeStud/3year.html',context=sdata)
+
+def year4(request):
+    data=eeeStud4.objects.all()
+    sdata={'data':data}
+    return render(request,'eeeStud/4year.html',context=sdata)
+
+# PROFILE
