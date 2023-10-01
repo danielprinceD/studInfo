@@ -23,3 +23,9 @@ def year4(request):
     return render(request,'eeeStud/4year.html',context=sdata)
 
 # PROFILE
+
+
+def profile(request,id):
+    profil=eeeStud.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'eeeStud/profile.html',context=pro)
