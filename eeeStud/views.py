@@ -47,3 +47,8 @@ def profile4(request,id):
 
 
 # DELETE
+
+def delete(request,id):
+    delet=eeeStud.objects.get(id=id)
+    delet.delete()
+    return redirect('/eee/year1/')
