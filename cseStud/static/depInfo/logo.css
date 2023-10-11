@@ -7,6 +7,7 @@
     width: 65%;
     height: 20%;
     background-color: black;
+    opacity: 1;
 
 }
 .logo:hover
@@ -18,8 +19,9 @@
 {
     text-transform: capitalize;
     width: 100%;
-    position: fixed;
+    
     bottom: 0;
+    
 
 }
 .foot > table

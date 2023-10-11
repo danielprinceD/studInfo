@@ -1,0 +1,127 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>{{profile.name}}</title>
+</head>
+{% load static %}
+
+<body>
+    {% block content1 %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
+
+
+
+<form method="POST" class="create_form">
+
+    {% csrf_token %}<form method="POST">
+        {% csrf_token %}
+            <center>
+            <legend>Create Student Details</legend>
+            <div>
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td>{{form.name}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Register Number : </td>
+                    <td>{{form.registerNo}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Roll No. : </td>
+                    <td>{{form.rollno}}</td>
+                <tr>
+        
+        
+                <tr>
+                    <td>Year : </td>
+                    <td>{{form.Year}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Class : </td>
+                    <td>{{form.Class}}</td>
+                <tr>
+                <tr>
+                    <td>DoB : </td>
+                    <td>{{form.DOB}}</td>
+                <tr>
+                <tr>
+                    <td>Place : </td>
+                    <td>{{form.Place}}</td>
+                <tr>
+        
+                <tr>
+                    <td>First Graduate : </td>
+                    <td>{{form.FirstGraduate}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Year Of Join : </td>
+                    <td>{{form.YearOfJoin}}</td>
+                <tr>
+        
+        
+                <tr>
+                    <td>Languages : </td>
+                    <td>{{form.Languages}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Father Name : </td>
+                    <td>{{form.FatherName}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Father Occupation : </td>
+                    <td>{{form.FathersOccupation}}</td>
+                <tr>
+        
+        
+        
+                <tr>
+                    <td>Mother Name : </td>
+                    <td>{{form.MotherName}}</td>
+                <tr>
+        
+        
+        
+                <tr>
+                    <td>Mother Occupation : </td>
+                    <td>{{form.MothersOccupation}}</td>
+                <tr>
+        
+        
+        
+        
+        
+                <tr>
+                    <td>Fees : </td>
+                    <td>{{form.Fees}}</td>
+                <tr>
+        
+                <tr>
+                    <td>Fees Pending : </td>
+                    <td>{{form.Pending}}</td>
+                </tr>
+            </div>
+            <tr rowspan="2" align="right" >
+                <td><button bgcolor="blue">Submit</button></td>
+            </tr>
+        </table>
+                
+                </center>
+                </form>
+    
+
+
+
+        
+</form>
+
+{% endblock %}
+</body>
+</html>

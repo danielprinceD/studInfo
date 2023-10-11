@@ -9,17 +9,19 @@ Select Year
 {% block content1 %}
 
 <div >
-{%load static%}
-<a href="/depInfo/dep" target="_blank"><img   class="logo" src="{%static '/depInfo/psr.png'%}" alt="PSR Logo"></a>
+{% load static %}
+<a href="/" target="_blank"><img   class="logo" src="{%static '/depInfo/psr.png'%}" alt="PSR Logo"></a>
 <link rel="stylesheet" href="{%static '/depInfo/logo.css'%}">
-<div>
 
+ 
 <div class="foot">
 <table border="1" align="center">
 <tr>
-<td>About Us</td>
-<td>Contact Us</td>
-<td>Our Services</td>
+
+<td><form action="{% url 'searchbar' %}" method="GET">
+<input type="text" name="search" placeholder="Search Name">
+<input type="button" value="Submit">
+</form></td>
 </tr>
 </table>
 </div>

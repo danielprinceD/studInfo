@@ -5,20 +5,75 @@ from django import forms
 # Create your models here.
 
 class cseStud(models.Model):
-    registerNo=models.CharField(max_length=11)
-    name=models.CharField(max_length=20)
-    rollno=models.CharField(max_length=7)
-    Year=models.IntegerField()
-    Class=models.CharField(max_length=10)
-    DOB=models.DateField()
-    Place=models.CharField(max_length=20)
-    FirstGraduate=models.BooleanField()
-    YearOfJoin=models.IntegerField()
-    Languages=models.CharField(max_length=100)
-    FatherName=models.CharField(max_length=20)
-    FathersOccupation=models.CharField(max_length=20)
-    MotherName=models.CharField(max_length=20)
-    MothersOccupation=models.CharField(max_length=20)
-    Fees=models.IntegerField()
-    Pending=models.BooleanField()
+    registerNo=models.CharField(max_length=11,default=None,blank=True, null=True)
+    name=models.CharField(max_length=20,default=None,blank=True, null=True)
+    rollno=models.CharField(max_length=7,default=None,blank=True, null=True)
+    Year=models.IntegerField(default=None,blank=True, null=True)
+    Class=models.CharField(max_length=10,default=None,blank=True, null=True)
+    DOB=models.DateField(default=None,blank=True, null=True)
+    Place=models.CharField(max_length=20,default=None,blank=True, null=True)
+    
+    YearOfJoin=models.IntegerField(default=None,blank=True, null=True)
+    Languages=models.CharField(max_length=100,default=None,blank=True, null=True)
+    FatherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    FathersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MotherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MothersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    Fees=models.IntegerField(default=None,blank=True, null=True)
+    
+class cseStud2(models.Model):
+    registerNo=models.CharField(max_length=11,default=None,blank=True, null=True)
+    name=models.CharField(max_length=20,default=None,blank=True, null=True)
+    rollno=models.CharField(max_length=7,default=None,blank=True, null=True)
+    Year=models.IntegerField(default=None,blank=True, null=True)
+    Class=models.CharField(max_length=10,default=None,blank=True, null=True)
+    DOB=models.DateField(default=None,blank=True, null=True)
+    Place=models.CharField(max_length=20,default=None,blank=True, null=True)
+    
+    YearOfJoin=models.IntegerField(default=None,blank=True, null=True)
+    Languages=models.CharField(max_length=100,default=None,blank=True, null=True)
+    FatherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    FathersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MotherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MothersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    Fees=models.IntegerField(default=None,blank=True, null=True)
+    
+class cseStud3(models.Model):
+    registerNo=models.CharField(max_length=11,default=None,blank=True, null=True)
+    name=models.CharField(max_length=20,default=None,blank=True, null=True)
+    rollno=models.CharField(max_length=7,default=None,blank=True, null=True)
+    Year=models.IntegerField(default=None,blank=True, null=True)
+    Class=models.CharField(max_length=10,default=None,blank=True, null=True)
+    DOB=models.DateField(default=None,blank=True, null=True)
+    Place=models.CharField(max_length=20,default=None,blank=True, null=True)
+    
+    YearOfJoin=models.IntegerField(default=None,blank=True, null=True)
+    Languages=models.CharField(max_length=100,default=None,blank=True, null=True)
+    FatherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    FathersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MotherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MothersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    Fees=models.IntegerField(default=None,blank=True, null=True)
+    
+class cseStud4(models.Model):
+    registerNo=models.CharField(max_length=11,default=None,blank=True, null=True)
+    name=models.CharField(max_length=20,default=None,blank=True, null=True)
+    rollno=models.CharField(max_length=7,default=None,blank=True, null=True)
+    Year=models.IntegerField(default=None,blank=True, null=True)
+    Class=models.CharField(max_length=10,default=None,blank=True, null=True)
+    DOB=models.DateField(default=None,blank=True, null=True)
+    Place=models.CharField(max_length=20,default=None,blank=True, null=True)
+    
+    YearOfJoin=models.IntegerField(default=None,blank=True, null=True)
+    Languages=models.CharField(max_length=100,default=None,blank=True, null=True)
+    FatherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    FathersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MotherName=models.CharField(max_length=20,default=None,blank=True, null=True)
+    MothersOccupation=models.CharField(max_length=20,default=None,blank=True, null=True)
+    Fees=models.IntegerField(default=None,blank=True, null=True)
+    
 
+def __str__(self):
+    li=['registerNO','name']
+    
+    

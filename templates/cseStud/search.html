@@ -1,0 +1,252 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>{{profile.name}}</title>
+</head>
+{% load static %}
+
+
+<body align="center" >
+    {% block content1 %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
+<div class="allDep" style="display:flex;justify-content:center; padding:5rem;flex-wrap:wrap"  >
+<div style="margin:1rem;padding:50px;background:royalblue;border-radius:1rem">
+
+<h1>CSE</h1>
+<h2> 1st Year </h2>
+    {% if cse %}
+    {% for i in cse %}
+    <a href="/cse/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if cse2 %}
+    {% for i in cse2 %}
+    <a href="/cse/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if cse3 %}
+    {% for i in cse3 %}
+    <a href="/cse/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if cse4 %}
+    {% for i in cse4 %}
+    <a href="/cse/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+<div  style="margin:1rem;padding:50px;background:royalblue;border-radius:1rem">
+
+<h1>ECE</h1>
+<h2> 1st Year </h2>
+    {% if ece %}
+    {% for i in ece %}
+    <a href="/ece/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if ece2 %}
+    {% for i in ece2 %}
+    <a href="/ece/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if ece3 %}
+    {% for i in ece3 %}
+    <a href="/ece/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if ece4 %}
+    {% for i in ece4 %}
+    <a href="/ece/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+<div  style="margin:1rem;padding:50px;background:royalblue;border-radius:1rem">
+
+<h1>Civil</h1>
+<h2> 1st Year </h2>
+    {% if civil %}
+    {% for i in civil %}
+    <a href="/civil/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if civil2 %}
+    {% for i in civil2 %}
+    <a href="/civil/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if civil3 %}
+    {% for i in civil3 %}
+    <a href="/civil/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if civil4 %}
+    {% for i in civil4 %}
+    <a href="/civil/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+<div  style="margin:1rem;padding:50px;background:royalblue;border-radius:1rem">
+
+<h1>EEE</h1>
+<h2> 1st Year </h2>
+    {% if eee %}
+    {% for i in eee %}
+    <a href="/eee/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if eee2 %}
+    {% for i in eee2 %}
+    <a href="/eee/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if eee3 %}
+    {% for i in eee3 %}
+    <a href="/eee/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if eee4 %}
+    {% for i in eee4 %}
+    <a href="/eee/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+<div  style="margin:1rem;padding:50px;background:royalblue;border-radius:1rem">
+
+<h1>MECH</h1>
+<h2> 1st Year </h2>
+    {% if mech %}
+    {% for i in mech %}
+    <a href="/mech/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if mech2 %}
+    {% for i in mech2 %}
+    <a href="/mech/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if mech3 %}
+    {% for i in mech3 %}
+    <a href="/mech/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if mech4 %}
+    {% for i in mech4 %}
+    <a href="/mech/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+
+</div>
+{% endblock %}
+
+
+</body>
+
+</html>
+

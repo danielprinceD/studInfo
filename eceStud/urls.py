@@ -15,9 +15,36 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from eceStud import views
+from eceStud import views 
+from depInfo import views as depInfoViews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.ece)
+    path('',views.ece),
+    path('year1/',views.year1),
+    path('year1/profile/<id>/',views.profile),
+    path('year1/update/<int:id>/',views.update),
+    path('year1/delete/<id>/',views.delete),
+      
+    path('year1/create1/',views.create1),
+    path('year1/create1/',views.create1),
+    path('year1/search/',depInfoViews.search ,name='searchbar'),
+
+    path('year2/',views.year2),
+    path('year2/profile2/<id>/',views.profile2),
+    path('year2/update2/<int:id>/',views.update2),
+    path('year2/delete2/<id>/',views.delete2),
+    path('year2/create2/',views.create2),
+
+    path('year3/',views.year3),
+    path('year3/profile3/<id>/',views.profile3),
+    path('year3/update3/<int:id>/',views.update3),
+    path('year3/delete3/<id>/',views.delete3),
+    path('year3/create3/',views.create3),
+
+    path('year4/',views.year4),
+    path('year4/profile4/<id>/',views.profile4),
+    path('year4/update4/<int:id>/',views.update4),
+    path('year4/delete4/<id>/',views.delete4),
+    path('year4/create4/',views.create4),
 ]

@@ -1,0 +1,112 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>{{profile.name}}</title>
+</head>
+{% load static %}
+
+
+<body align="center">
+    {% block content1 %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
+
+
+
+<form>
+    <center>
+    <legend>{{profile.name}} Details</legend>
+    <table>
+        <tr>
+            <td>Name :</td>
+            <td>{{profile.name}}</td>
+        <tr>
+
+        <tr>
+            <td>Register Number : </td>
+            <td>{{profile.registerNo}}</td>
+        <tr>
+
+        <tr>
+            <td>Roll No. : </td>
+            <td>{{profile.rollno}}</td>
+        <tr>
+
+
+        <tr>
+            <td>Year : </td>
+            <td>{{profile.Year}}</td>
+        <tr>
+
+        <tr>
+            <td>Class : </td>
+            <td>{{profile.Class}}</td>
+        <tr>
+        <tr>
+            <td>DoB : </td>
+            <td>{{profile.DOB}}</td>
+        <tr>
+        <tr>
+            <td>Place : </td>
+            <td>{{profile.Place}}</td>
+        <tr>
+
+        <tr>
+            <td>First Graduate : </td>
+            <td>{{profile.FirstGraduate}}</td>
+        <tr>
+
+        <tr>
+            <td>Year Of Join : </td>
+            <td>{{profile.YearOfJoin}}</td>
+        <tr>
+
+
+        <tr>
+            <td>Languages : </td>
+            <td>{{profile.Languages}}</td>
+        <tr>
+
+        <tr>
+            <td>Father Name : </td>
+            <td>{{profile.FatherName}}</td>
+        <tr>
+
+        <tr>
+            <td>Father Occupation : </td>
+            <td>{{profile.FathersOccupation}}</td>
+        <tr>
+
+
+
+        <tr>
+            <td>Mother Name : </td>
+            <td>{{profile.MotherName}}</td>
+        <tr>
+
+
+
+        <tr>
+            <td>Mother Occupation : </td>
+            <td>{{profile.MothersOccupation}}</td>
+        <tr>
+
+
+
+
+
+        <tr>
+            <td>Fees : </td>
+            <td>{{profile.Fees}}</td>
+        <tr>
+
+        <tr>
+            <td>Fees Pending : </td>
+            <td>{{profile.Pending}}</td>
+        <tr>
+        </center>
+        </form>
+
+{% endblock %}
+</body>
+</html>

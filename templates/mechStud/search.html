@@ -1,0 +1,111 @@
+<html>
+{% extends "depInfo/base.html"%}
+<head>
+<title>{{profile.name}}</title>
+</head>
+{% load static %}
+
+
+<body align="center" >
+    {% block content1 %}
+    {{block.super}}
+    <link rel="stylesheet" href="{% static '/depInfo/profile.css' %}">
+
+<div>
+
+<h1>CSE</h1>
+<h2> 1st Year </h2>
+    {% if cse %}
+    {% for i in cse %}
+    <a href="/cse/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if cse2 %}
+    {% for i in cse2 %}
+    <a href="/cse/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if cse3 %}
+    {% for i in cse3 %}
+    <a href="/cse/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if cse4 %}
+    {% for i in cse4 %}
+    <a href="/cse/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+<div>
+
+<h1>ECE</h1>
+<h2> 1st Year </h2>
+    {% if ece %}
+    {% for i in ece %}
+    <a href="/ece/year1/profile/{{i.id}}">{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>2nd Year</h2>
+
+    {% if ece2 %}
+    {% for i in ece2 %}
+    <a href="/ece/year2/profile2/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>3rd Year</h2>
+
+    {% if ece3 %}
+    {% for i in ece3 %}
+    <a href="/ece/year3/profile3/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+    
+    <h2>4th Year</h2>
+
+    {% if ece4 %}
+    {% for i in ece4 %}
+    <a href="/ece/year4/profile4/{{i.id}}" >{{i.registerNo}} : {{i.name}} : {{i.rollno}}</a><br><br>
+    {%endfor%}
+    
+    {% else %}
+    <h3>No Result Found</h3>
+    {% endif %}
+</div>
+
+
+{% endblock %}
+</body>
+</html>
+
