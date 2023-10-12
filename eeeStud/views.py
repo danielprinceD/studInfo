@@ -62,4 +62,13 @@ def delete3(request,id):
     delet=eeeStud3.objects.get(id=id)
     delet.delete()
     return redirect('/eee/year3/')
-\
+
+def delete4(request,id):
+    delet=eeeStud4.objects.get(id=id)
+    delet.delete()
+    return redirect('/eee/year4/')
+    
+
+# UPDATE
+
+
