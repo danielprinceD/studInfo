@@ -96,3 +96,11 @@ def update(request, id):
         form = Year1Form(instance=eee_stud)
         
     return render(request, 'eeeStud/update.html', {'form': form, 'profile': eee_stud})
+def update2(request, id):
+    form=Year2Form()
+    try:
+        # Get the student's profile using the provided 'id' parameter.
+        eee_stud = eeeStud2.objects.get(id=id)
+    except eeeStud.DoesNotExist:
+        # Handle the case where the student profile does not exist.
+        return redirect('/eee/year2/')  # Redirect to a proper page or show an error message
