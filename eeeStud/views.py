@@ -29,3 +29,9 @@ def profile(request,id):
     profil=eeeStud.objects.get(id=id)
     pro={'profile':profil}
     return render(request, 'eeeStud/profile.html',context=pro)
+
+def profile2(request,id):
+    profil=eeeStud2.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'eeeStud/profile2.html',context=pro)
+
