@@ -35,3 +35,12 @@ def profile2(request,id):
     pro={'profile':profil}
     return render(request, 'eeeStud/profile2.html',context=pro)
 
+def profile3(request,id):
+    profil=eeeStud3.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'eeeStud/profile3.html',context=pro)
+
+def profile4(request,id):
+    profil=eeeStud4.objects.get(id=id)
+    pro={'profile':profil}
+    return render(request, 'eeeStud/profile4.html',context=pro)
