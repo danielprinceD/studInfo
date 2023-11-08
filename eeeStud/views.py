@@ -44,3 +44,11 @@ def profile4(request,id):
     profil=eeeStud4.objects.get(id=id)
     pro={'profile':profil}
     return render(request, 'eeeStud/profile4.html',context=pro)
+
+
+# DELETE
+
+def delete(request,id):
+    delet=eeeStud.objects.get(id=id)
+    delet.delete()
+    return redirect('/eee/year1/')
