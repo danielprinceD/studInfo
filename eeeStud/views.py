@@ -57,8 +57,3 @@ def delete2(request,id):
     delet=eeeStud2.objects.get(id=id)
     delet.delete()
     return redirect('/eee/year2/')
-
-def delete2(request,id):
-    delet=eeeStud2.objects.get(id=id)
-    delet.delete()
-    return redirect('/eee/year2/')
