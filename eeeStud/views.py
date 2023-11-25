@@ -1,5 +1,7 @@
 from unicodedata import name
 from django.shortcuts import render,redirect
+from .models import eeeStud
+from .models import eeeStud2 ,eeeStud3,eeeStud4
 
 # Create your views here.
 
